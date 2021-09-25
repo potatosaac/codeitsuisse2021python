@@ -11,8 +11,9 @@ logger = logging.getLogger(__name__)
 def evaluateprofit():
     data = request.get_json()
     logging.info("data sent for evaluation {}".format(data))
-    print(data)
-    logging.info("My result :{}".format(result))
+    
+    logging.info("My result :{}".format(data))
+    return json.dumps(data)
     
 
 
